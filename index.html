@@ -5,8 +5,60 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header container">
+      <a class="header-logo">Логотип Глейси</a>
+      <nav class="main-navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item catalog-dropdown-container">
+            <a href="#">Каталог</a>
+            <ul class="catalog-dropdown-list">
+              <li class="catalog-dropdown-item"><a href="#">Новинки</a></li>
+              <li class="catalog-dropdown-item"><a href="#">Сливочное</a></li>
+              <li class="catalog-dropdown-item"><a href="#">Щербеты</a></li>
+              <li class="catalog-dropdown-item"><a href="#">Фруктовый лёд</a></li>
+              <li class="catalog-dropdown-item"><a href="#">Мелорин</a></li>
+            </ul>
+          </li>
+          <li class="navigation-item">Доставка и оплата</li>
+          <li class="navigation-item">О компании</li>
+        </ul>
+      </nav>
+      <ul class="user-actions">
+        <li class="search">
+          <span class="search-icon">Поиск по сайту</span>
+          <input type="search" name="search" placeholder="Что ищем?">
+        </li>
+        <li class="login-dropdown">
+          <span class="login">Вход</span>
+          <form action="http://echo.htmlacademy.ru" class="login-form" method="get">
+            <input type="email" name="login" placeholder="Электронная почта">
+            <input type="password" name="password" placeholder="Пароль">
+            <button type="button" class="button sign-in-btn" name="sign-in-btn">Войти</button>
+            <p class="account-links">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </p>
+          </form>
+        </li>
+        <div class="schedule">
+          <p class="work-hours">С 10 до 20, ежедневно</p>
+          <p class="telephone">
+            <a href="tel:+78124502525">8 812 450-25-25</a>
+          </p>
+        </div>
+      </ul>
+    </header>
+    <main class="container">
+      <section class="slider">
+        <div class="slider-controls">
+          <input type="radio" id="slide-1" name="slide">
+          <input type="radio" id="slide-2" name="slide">
+          <input type="radio" id="slide-3" name="slide">
+        </div>
+        <div class="slide-content">
+          <img src="img/slide-1.png" alt="Крем-брюле и Пломбир с малиновым джемом" class="slide-image">
+        </div>
+      </section>
+    </main>
   </body>
 </html>
